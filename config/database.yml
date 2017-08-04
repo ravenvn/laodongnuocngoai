@@ -7,7 +7,7 @@
 default: &default
   adapter: mysql2
   encoding: utf8
-  database: laodongnuocngoai
+  database: laodongnuocngoai_dev
   pool: 5
   username: root
   password: mickey02
