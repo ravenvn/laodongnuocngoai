@@ -12,41 +12,19 @@ default: &default
   username: root
   password: mickey02
   host: localhost
-  socket: /tmp/mysql.sock
+  # socket: /tmp/mysql.sock
 
 development:
   <<: *default
-  adapter: mysql2
-  encoding: utf8
   database: laodongnuocngoai_dev
-  pool: 5
-  username: root
-  password: mickey02
-  host: localhost
-  socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  adapter: mysql2
-  encoding: utf8
   database: laodongnuocngoai_test
-  pool: 5
-  username: root
-  password: mickey02
-  host: localhost
-  socket: /tmp/mysql.sock
-
 
 production:
   <<: *default
-  adapter: mysql2
-  encoding: utf8
   database: laodongnuocngoai
-  pool: 5
-  username: root
-  password: mickey02
-  host: localhost
-  socket: /tmp/mysql.sock
