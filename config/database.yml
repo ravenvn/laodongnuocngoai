@@ -9,11 +9,10 @@ default: &default
   encoding: unicode
   database: laodongnuocngoai_dev
   pool: 5
-  username: root
-  password: mickey02
+  username: <%= ENV['APPNAME_DATABASE_USER'] %>
+  password: <%= ENV['APPNAME_DATABASE_PASSWORD'] %>
   host: localhost
-  # socket: /tmp/mysql.sock
-
+ 
 development:
   <<: *default
   database: laodongnuocngoai_dev
