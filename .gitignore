@@ -22,3 +22,4 @@
 .rbenv-vars
 public/assets/**
 shared/**
+config/puma.rb
