@@ -21,3 +21,4 @@
 .byebug_history
 .rbenv-vars
 public/assets/**
+shared/**
